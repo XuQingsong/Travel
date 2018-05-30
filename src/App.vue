@@ -1,23 +1,18 @@
+<!-- 以vue结尾的文件都是单文件组件，template是组件的模板，script是组件的 -->
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+    <keep-alive exclude="Detail">
+      <router-view/>
+    </keep-alive>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'App'
+  name: 'Home'
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
