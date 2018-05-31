@@ -21,35 +21,8 @@
 <script>
 export default {
   name: 'HomeWeekend',
-  data () {
-    return {
-      list: [{
-        id: '00001',
-        imgUrl: 'http://img1.qunarzz.com/sight/source/1505/5e/6e13db8af6ec30.jpg_r_640x214_5c1b0fa9.jpg',
-        title: '三亚必游TOP10',
-        desc: '玩转海岛热带雨林，感受独特黎苗文化'
-      }, {
-        id: '00002',
-        imgUrl: 'http://img1.qunarzz.com/sight/source/1505/a4/df8543b6b8506d.jpg_r_640x214_660e1e3a.jpg',
-        title: '就是要看海',
-        desc: '海上摩托，拖曳伞什么的爽歪歪了'
-      }, {
-        id: '00003',
-        imgUrl: 'http://img1.qunarzz.com/sight/source/1505/3d/f99f5c73b52c4d.jpg_r_640x214_4e60b24c.jpg',
-        title: '寻找最佳潜水地',
-        desc: '潜入梦幻海底，看鱼儿穿梭'
-      }, {
-        id: '00004',
-        imgUrl: 'http://img1.qunarzz.com/sight/source/1602/bf/a2ac57b8bfe7cd.jpg_r_640x214_406d4c7e.jpg',
-        title: '城会玩儿游艇大趴',
-        desc: '酷炫游艇派对，私人订制心跳回忆'
-      }, {
-        id: '00005',
-        imgUrl: 'http://img1.qunarzz.com/sight/source/1505/3e/a588a413145dbe.jpg_r_640x214_b3729b6e.jpg',
-        title: '小清新帆船出海',
-        desc: '帆船出海体验，不一样的海上休闲'
-      }]
-    }
+  props: {
+    list: Array
   }
 }
 </script>

@@ -20,35 +20,8 @@
 <script>
 export default {
   name: 'HomeRecommend',
-  data () {
-    return {
-      list: [{
-        id: '00001',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1707/c7/c7f3baa7a5094e3ca3.img.jpg_200x200_1e7123ce.jpg',
-        title: '三亚海上观光巴士',
-        desc: '三亚海上观光巴士好玩好玩'
-      }, {
-        id: '00002',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1412/e9/d5c72454d47eda983bd4e857c9c361d8.water.jpg_200x200_5870d2ca.jpg',
-        title: '分界洲岛',
-        desc: '分界洲岛好玩好玩'
-      }, {
-        id: '00003',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1702/e1/e10c8c5bec0c8e02a3.img.png_200x200_efcaf78c.png',
-        title: '亚龙湾热带天堂森林公园',
-        desc: '亚龙湾热带天堂森林公园好玩好玩'
-      }, {
-        id: '00004',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1504/a7/a71c66e94b9d7f2f.water.jpg_200x200_eb3baf53.jpg',
-        title: '三亚梦幻水上乐园',
-        desc: '三亚梦幻水上乐园好玩好玩'
-      }, {
-        id: '00005',
-        imgUrl: 'http://img1.qunarzz.com/wugc/p189/201206/12/a3ace34bc010041193835fbb.jpg_200x200_84bd8f96.jpg',
-        title: '南山文化旅游区',
-        desc: '南山文化旅游区好玩好玩'
-      }]
-    }
+  props: {
+    list: Array
   }
 }
 </script>

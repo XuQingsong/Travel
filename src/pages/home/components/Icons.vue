@@ -17,45 +17,11 @@
 <script>
 export default {
   name: 'HomeIcons',
+  props: {
+    list: Array
+  },
   data () {
     return {
-      list: [{
-        id: '00001',
-        imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png',
-        desc: '景点门票'
-      }, {
-        id: '00002',
-        imgUrl: 'http://img1.qunarzz.com/piao/fusion/1804/ff/fdf170ee89594b02.png',
-        desc: '必游榜单'
-      }, {
-        id: '00003',
-        imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/95/8246f27355943202.png',
-        desc: '游乐场'
-      }, {
-        id: '00004',
-        imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/bd/9f7b9b2b60c1502.png',
-        desc: '踏青赏花'
-      }, {
-        id: '00005',
-        imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/76/eb88861d78fb9902.png',
-        desc: '动植物园'
-      }, {
-        id: '00006',
-        imgUrl: 'http://img1.qunarzz.com/piao/fusion/1804/5a/13ceb38dcf262f02.png',
-        desc: '一日游'
-      }, {
-        id: '00007',
-        imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/dd/cce1231836f10a02.png',
-        desc: '周边游'
-      }, {
-        id: '00008',
-        imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/96/c70f1e85ae4a4f02.png',
-        desc: '自然风光'
-      }, {
-        id: '00009',
-        imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/e3/67df61427c8e1302.png',
-        desc: '演出'
-      }],
       swiperOption: {
         autoplay: false
       }
@@ -64,6 +30,7 @@ export default {
   computed: {
     pages () {
       const pages = []
+      console.log(this.list)
       this.list.forEach((item, index) => {
         const page = Math.floor(index / 8)
         if (!pages[page]) {
